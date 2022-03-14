@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content1" id="red"></div>
+        <div class="content2" id="green"></div>
+        <div class="content3" id="blue"></div>
+        <div class="content4" id="yellow"></div>
+        <div class="content5" id="purple"></div>
+        <div class="content6" id="grey"></div>
+    </div>
+</body>
+<style>
+    .body {
+        color: white;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 960px) and (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                grid-column-gap: 20px;
+                grid-auto-rows: 300px;
+                max-width: 960px;
+                margin: auto;
+                grid-template-areas: "content1 content2 content3" "content4 content5 content6";
+            } 
+    }
+    .content1, .content2, .content3, .content4, .content5, .content6 {
+        grid-area: content;
+    }
+</style>
+</html>
