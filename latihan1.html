@@ -4,61 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latihan1</title>
-    
-    <style>
-        .body {
-            margin : auto
-        }
-        .container{
-            display: grid;
-        }
-        @media only screen and (min-widht: 600px) and (max-widht:960px){
-                .content {
-                    grid-template-columns: 30% 30% 30%;
-                    height: 100%;  
-                } 
-        }
-        #red {
-            grid-area: center;
-            color: red;
-            background-color: white;
-        }
-        #green {
-            grid-area: center;
-            color: green;
-            background-color: white;
-        }
-        #blue {
-            grid-area: center;
-            color: blue;
-            background-color: white;
-        }
-        #yellow {
-            grid-area: center;
-            color: yellow;
-            background-color: white;
-        }
-        #purple {
-            grid-area: center;
-            color: purple;
-            background-color: white;
-        }
-        #grey {
-            grid-area:center;
-            color: grey;
-            background-color: white;
-        }
-    </style>
+    <title>latihan 1 Frontend Fundamental</title>
 </head>
+<style>
+    .body {
+        margin : 0;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+    }
+    .content {
+        width: 30%;
+        height: 35px;
+    }
+    .red {
+        background-color: red;
+    }
+    .green {
+        background-color: green;
+    }
+    .blue {
+        background-color: blue;
+    }
+    #yellow {
+        background-color: yellow;
+    }
+    #purple {
+        background-color:purple;
+    }
+    #grey {
+        background-color: grey;
+    }
+    @media only screen and (max-widht: 600px) {
+            .content {
+                width: 100%;
+                height: 35px;  
+            } 
+    }
+    @media only screen and (min-widht: 600px) {
+            .content {
+                width: 50%;
+                height: 35px;  
+            } 
+    }
+    @media only screen and (min-widht: 960px) {
+            .content {
+                width: 30%;
+                height: 35px;  
+            } 
+    }
+    </style>
+
 <body>
     <div class="container">
-        <div class="content" id="red"></div>
-        <div class="content" id="green"></div>
-        <div class="content" id="blue"></div>
-        <div class="content" id="yellow"></div>
-        <div class="content" id="purple"></div>
-        <div class="content" id="grey"></div>
+        <div class="content red" id="red"></div>
+        <div class="content green" id="green"></div>
+        <div class="content blue" id="blue"></div>
+        <div class="content yellow" id="yellow"></div>
+        <div class="content purple" id="purple"></div>
+        <div class="content grey" id="grey"></div>
     </div>
 </body>
 </html>
